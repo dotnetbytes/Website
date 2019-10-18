@@ -1,0 +1,88 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:admin="http://webns.net/mvcb/" 
+  xmlns:atom="http://www.w3.org/2005/Atom/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" 
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+  version="2.0" encoding="UTF-8">
+  
+  <channel>
+    <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+    <title>{{ site.title | smartify | xml_escape }}</title>
+    <link>{{ site.url }}</link>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <description>{{ site.description | xml_escape }}</description>
+    <language>{{ site.lang | xml_escape }}</language>
+    <itunes:type >{{ site.podcast_type | xml_escape }}</itunes:type>
+    <itunes:subtitle>{{ site.subtitle | xml_escape }}</itunes:subtitle>
+    <itunes:author>{{ site.author_name | xml_escape }}</itunes:author>
+    <itunes:summary>{{ site.summary | xml_escape }}</itunes:summary>
+    <itunes:image href="{{ site.url }}/images/cover.jpg" />
+    <itunes:explicit>{{ site.explicit | xml_escape }}</itunes:explicit>
+    <itunes:keywords>{{ site.keywords | array_to_sentence_string }}</itunes:keywords>
+    <itunes:owner>
+      <itunes:name>{{ site.author_name | xml_escape }}</itunes:name>
+      <itunes:email>{{ site.author_email }}</itunes:email>
+    </itunes:owner>
+
+    {% if site.rss_url %}
+      <itunes:new-feed-url>{{ site.rss_url }}</itunes:new-feed-url>
+    {% endif %}
+
+    {% if site.primary_category and site.primary_subcategory %}
+      <itunes:category text="{{ site.primary_category | xml_escape }}">
+        <itunes:category text="{{ site.primary_subcategory | xml_escape }}" />
+      </itunes:category>
+    {% elsif site.primary_category %}
+      <itunes:category text="{{ site.primary_category | xml_escape }}" />
+    {% endif %}
+
+    {% if site.secondary_category %}
+      <itunes:category text="{{ site.secondary_category | xml_escape }}" />
+    {% endif %}
+
+    {% if site.tertiary_category %}
+      <itunes:category text="{{ site.tertiary_category | xml_escape }}" />
+    {% endif %}
+
+    {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+    {% for post in posts %}
+      <item>
+        <title>Episode {{ post.slug }}: {{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <author>{{ site.author_name | xml_escape }}</author>
+        <enclosure url="{{ site.storage_relative_url }}/{{ post.file_name }}" length="{{ post.file_length }}" type="audio/mpeg" />
+        
+        <itunes:episodeType>{{ site.episode_type }}</itunes:episodeType>
+        <itunes:author>{{ site.author_name | xml_escape }}</itunes:author>
+        <itunes:subtitle></itunes:subtitle>
+        <itunes:duration>{{ post.duration }}</itunes:duration>
+        <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+        <itunes:image href="{{ site.url }}/images/cover.jpg" />
+
+        <itunes:keywords>{{ post.keywords | array_to_sentence_string }}</itunes:keywords>
+
+        <description>{{ post.content | xml_escape }}</description>
+        <content:encoded>
+          <![CDATA[
+            {{ post.content }}
+          ]]>
+        </content:encoded>
+        <itunes:summary>
+          <![CDATA[
+            {{ post.content }}
+          ]]>
+        </itunes:summary>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

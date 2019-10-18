@@ -1,0 +1,87 @@
+# Blog Settings
+title: .NET Bytes
+subtitle: The podcast bringing you the news about .NET, C#, Visual Studio, and everything in between, from Redmond and around the world. 
+description: The podcast bringing you the news about .NET, C#, Visual Studio, and everything in between, from Redmond and around the world. 
+url: https://dotnetbytes.netlify.com
+
+# Podcast Settings
+storage_relative_url: https://dotnetbytesaudio.blob.core.windows.net/podcasts
+summary: The podcast bringing you the news about .NET, C#, Visual Studio, and everything in between, from Redmond and around the world. 
+keywords: ["c#", ".net", "visual studio"]
+license_owner: Calvin A. Allen & Matthew D. Groves
+license_type: Standard Copyright
+lang: en
+explicit: "no"
+author_email: calvin.allen@outlook.com
+author_name: Calvin A. Allen & Matthew D. Groves
+podcast_type: episodic
+episode_type: full
+primary_category: News
+primary_subcategory: Tech News
+secondary_category: Technology
+tertiary_category: 
+
+# Social Settings
+rss_url: https://www.dotnetbytes.fm/rss
+twitter_url: https://www.twitter.com/dotnetbytes
+castbox_url: https://castbox.fm/channel/.NET-Bytes-id2038948
+googleplay_url: https://play.google.com/music/m/Iwqjc76doxg64ddp5fuzw3aezcq?t=NET_Bytes
+overcast_url: https://overcast.fm/itunes1455100561/net-bytes
+pocketcasts_url: https://play.pocketcasts.com/podcasts/8f942950-20bd-0137-f265-1d245fc5f9cf
+spotify_url: https://open.spotify.com/show/1T4g1GL1MZHAPGu8UX8ExK
+stitcher_url: https://www.stitcher.com/podcast/net-bytes
+tunein_url: https://tunein.com/podcasts/Technology-Podcasts/NET-Bytes-p1213046
+
+# Disqus Comments
+disqus_short_name: dotnetbytes
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-48089969-8
+
+# Jekyll Settings
+timezone: "EST5EDT"
+permalink: /:slug/
+paginate: 10
+paginate_path: "page/:num"
+future: false
+
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock", ".editorconfig", "rakefile.rb"]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: null 
+      sitemap: false
+      comments: false
+      sharing: false
+      image: null  
+  -
+    scope:
+      path: "page"
+      type: "pages"
+    values:
+      layout: page 
+      sitemap: true      
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      explicit: "no"
+      sitemap: true
+      comments: true
+      sharing: true
+      keywords: ["c#", ".net", "visual studio"]
+      image: "cover.jpg"

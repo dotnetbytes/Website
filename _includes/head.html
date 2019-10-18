@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+{% if site.lang %}
+	<html lang="{{ site.lang }}">
+{% else %}
+	<html>
+{% endif %}
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="google-site-verification" content="e6Xvmw1EyfURgMF9iYHyDIGuJf6-F0J-n7Og6xeNh0c" />
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="{{ site.rss_url }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="/css/site.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/js/slash.js" async></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png?v=WGL8Y3xokm">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png?v=WGL8Y3xokm">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png?v=WGL8Y3xokm">
+	<link rel="manifest" href="/images/icons/site.webmanifest?v=WGL8Y3xokm">
+	<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg?v=WGL8Y3xokm" color="#5bbad5">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico?v=WGL8Y3xokm">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/images/icons/browserconfig.xml?v=WGL8Y3xokm">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+	
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@dotnetbytes" />
+	<meta name="twitter:creator" content="@dotnetbytes" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
+	<meta property="og:image:type" content="image/png" />
+
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{ page.title }}" />
+  
+	<meta property="og:image" content="{{ site.url }}/images/cover.jpg" />
+	
+	{% if page.description %}
+		<meta property="og:description" content="{{ page.description }}" />
+	{% else %}
+		<meta property="og:description" content="{{ site.description }}" />
+	{% endif %}
+
+	{% if page.date %}
+		<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+		<meta property="article:author" content="{{ site.url }}/about/" />
+	{% endif %}
+
+	{% if page.keywords %}
+  		{% for keyword in page.keywords %}
+  			<meta content="{{ keyword }}" property="article:tag">
+  		{% endfor %}
+	{% endif %}
+
+	{%if page.title %}
+		<title>{{ page.title }} - {{ site.title }}</title>
+	{% else %}
+		<title>{{ site.title }}</title>	
+	{% endif %}
+
+  	{% include google_analytics.html %}
+</head>

@@ -1,0 +1,34 @@
+pre code {
+  font-family: Consolas,Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  display: block;
+  background: #fff;
+  color: #000;
+  border: solid 2px #eee;
+  margin: 0px;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  word-wrap: break-word;
+}
+
+.language-csharp .rem, .highlight .c1, .highlight .cs, .highlight .c, .highlight .cm, .highlight .nn { color: #008000; }
+.language-csharp .kwrd, .highlight .kt, .highlight .k, .highlight .kd { color: #0000ff; }
+.language-csharp .str, .highlight .s, .highlight .s1 { color: #a31515; }
+.language-csharp .op { color: #0000c0; }
+.language-csharp .preproc { color: #cc6633; }
+.language-csharp .asp { background-color: #ffff00; }
+.language-csharp .html { color: #800000; }
+.language-csharp .attr, .highlight .na { color: #ff0000; }
+.language-csharp .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.language-csharp .lnum { color: #606060; }
+
+
+.highlight .m { color: #009999 } /* Literal Number */
+.highlight .o, .highlight .p, .highlight .p-indicator, .highlight .nv { color: #666666 } /* Operator */
