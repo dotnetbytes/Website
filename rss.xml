@@ -26,7 +26,7 @@
     <itunes:summary>{{ site.summary | xml_escape }}</itunes:summary>
     <itunes:image href="{{ site.url }}/images/cover.jpg" />
     <itunes:explicit>{{ site.explicit | xml_escape }}</itunes:explicit>
-    <itunes:keywords>{{ site.keywords | array_to_sentence_string }}</itunes:keywords>
+    <itunes:keywords>{{ site.keywords | join: ", " }}</itunes:keywords>
     <itunes:owner>
       <itunes:name>{{ site.author_name | xml_escape }}</itunes:name>
       <itunes:email>{{ site.author_email }}</itunes:email>
@@ -69,7 +69,7 @@
         <itunes:explicit>{{ post.explicit }}</itunes:explicit>
         <itunes:image href="{{ site.url }}/images/cover.jpg" />
 
-        <itunes:keywords>{{ post.keywords | array_to_sentence_string }}</itunes:keywords>
+        <itunes:keywords>{{ post.keywords | join: ", "  }}</itunes:keywords>
 
         <description>{{ post.content | xml_escape }}</description>
         <content:encoded>
