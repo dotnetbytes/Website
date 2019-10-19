@@ -100,7 +100,6 @@ a {
     color: #fff;
     display: block;
     margin: auto;
-    max-width: 210px;
     margin: 0;
 }
 @media screen and (max-width: 600px) { 
@@ -537,7 +536,7 @@ ul li a { -webkit-transition: all .2s ease-in;-moz-transition:all .2s ease-in;-o
 #content article .entry-content .github-widget p { margin-top: 0px }
 #content article .entry-content .more-link:before { line-height: 1.2em }
 #content article .entry-content .more-link { padding-left: 0px }
-#content article .entry-content h2 { font-size: 1.3em;margin-top:30px;margin-bottom:-20px;font-weight:bold }
+#content article .entry-content h2 { font-size: 1.3em;margin-top:30px;font-weight:bold }
 #content article .entry-content h2::before { border-bottom: none }
 #content article .entry-content blockquote { border-left: 5px solid #4466c5;background:#F7F7F7 }
 #content article .entry-content blockquote p { margin-top: 0px }
