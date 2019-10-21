@@ -56,6 +56,7 @@ sass:
   style:            :compressed
 
 exclude: ["README.md", "Gemfile", "Gemfile.lock", ".editorconfig", "rakefile.rb"]
+include: ["_redirects"]
 
 defaults:
   -
