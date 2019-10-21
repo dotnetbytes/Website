@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Me
+title: Contact Us
 sitemap: true
 ---
 
