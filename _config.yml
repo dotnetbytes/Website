@@ -23,7 +23,7 @@ secondary_category: Technology
 tertiary_category: 
 
 # Social Settings
-rss_url: https://www.dotnetbytes.fm/rss
+rss_url: https://www.dotnetbytes.fm/rss.xml
 twitter_url: https://www.twitter.com/dotnetbytes
 castbox_url: https://castbox.fm/channel/.NET-Bytes-id2038948
 googleplay_url: https://play.google.com/music/m/Iwqjc76doxg64ddp5fuzw3aezcq?t=NET_Bytes
