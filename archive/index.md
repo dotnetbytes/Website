@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Archives
+title: The Archives
 sitemap: true
 ---
 

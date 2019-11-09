@@ -1,6 +1,49 @@
 <ul class="main-navigation">
-  <li><a href="/">home</a></li>
-  <li><a href="/about">about</a></li>
-  <li><a href="/archive">archive</a></li>
-  <li><a href="/contact">contact</a></li>
+  <li><a href="/hosts">Your Hosts</a></li>
+  <li><a href="/archive">The Archives</a></li>
+  <li><a href="/contact">Contact Us</a></li>
+</ul>
+
+<br/>
+
+<ul class="main-navigation">
+  {% if site.itunes_url %}
+    <li><a href="{{ site.itunes_url }}">iTunes</a></li>
+  {% endif %}
+
+  {% if site.castbox_url %}
+    <li><a href="{{ site.castbox_url}}">Castbox</a></li>
+  {% endif %}
+
+  {% if site.googleplay_url %}
+    <li><a href="{{ site.googleplay_url}}">Google Play</a></li>
+  {% endif %}
+
+  {% if site.overcast_url %}
+    <li><a href="{{ site.overcast_url}}">Overcast</a></li>
+  {% endif %}
+
+  {% if site.pocketcasts_url %}
+    <li><a href="{{ site.pocketcasts_url}}">Pocketcasts</a></li>
+  {% endif %}
+
+  {% if site.spotify_url %}
+    <li><a href="{{ site.spotify_url}}">Spotify</a></li>
+  {% endif %}
+
+  {% if site.stitcher_url %}
+    <li><a href="{{ site.stitcher_url}}">Stitcher</a></li>
+  {% endif %}
+
+  {% if site.tunein_url %}
+    <li><a href="{{ site.tunein_url}}">TuneIn</a></li>
+  {% endif %}          
+
+  {% if site.rss_url %}
+    <li><a href="{{ site.rss_url }}">RSS</a></li>
+  {% endif %}
+
+  {% if site.twitter_url %}
+    <li><a href="{{ site.twitter_url }}">Twitter</a></li>
+  {% endif %}  
 </ul>

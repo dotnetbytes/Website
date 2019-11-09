@@ -1,7 +1,5 @@
 <div class="profilepic">
-	{% if site.gravatar_url %}
-	  <img src="{{ site.gravatar_url }}?s=160" alt="Profile Picture" />
-	{% endif %}
+  <img src="/images/cover.jpg" style="width: 160px;" alt="Profile Picture" />
 </div>
 <hgroup>
   <h1><a href="/">{{ site.title }}</a></h1>
@@ -10,15 +8,3 @@
   {% endif %}
 </hgroup>
 <nav id="main-nav">{% include navigation.html %}</nav>
-<br />
-<nav id="sub-nav">
-	<div class="social">
-		{% if site.twitter_url %}
-			<a class="twitter" href="{{ site.twitter_url }}" title="Twitter">Twitter</a>
-		{% endif %}
-		{% if site.rss_url %}
-			<a class="rss" href="{{ site.rss_url }}" title="RSS">RSS</a>
-		{% endif %}
-	</div>
-</nav>
-
