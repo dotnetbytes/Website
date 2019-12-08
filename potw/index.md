@@ -18,3 +18,5 @@ This page is a list of all the projects we've highlighted so far (partly for you
 * [MyTested.AspNetCore.Mvc](https://github.com/ivaylokenov/MyTested.AspNetCore.Mvc) - [October 14, 2019](https://www.dotnetbytes.fm/9)
 * [MediatR](https://github.com/jbogard/MediatR) - [October 28, 2019](https://www.dotnetbytes.fm/10)
 * [ConsoleGUI](https://github.com/TomaszRewak/C-sharp-console-gui-framework) - [November 11, 2019](https://www.dotnetbytes.fm/11)
+* [Uno Platform](https://platform.uno/) - [December 8, 2019](https://www.dotnetbytes.fm/12)
+* [CodeQL](https://securitylab.github.com/tools/codeql) - [December 8, 2019](https://www.dotnetbytes.fm/12)
