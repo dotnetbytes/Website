@@ -20,4 +20,4 @@ This page is a list of all the projects we've highlighted so far (partly for you
 * [ConsoleGUI](https://github.com/TomaszRewak/C-sharp-console-gui-framework) - [November 11, 2019](https://www.dotnetbytes.fm/11)
 * [Uno Platform](https://platform.uno/) - [December 8, 2019](https://www.dotnetbytes.fm/12)
 * [CodeQL](https://securitylab.github.com/tools/codeql) - [December 8, 2019](https://www.dotnetbytes.fm/12)
-* [TwitchLib(https://github.com/TwitchLib/TwitchLib) - [December 16, 2019](https://www.dotnetbytes.fm/13)
+* [TwitchLib](https://github.com/TwitchLib/TwitchLib) - [December 16, 2019](https://www.dotnetbytes.fm/13)
