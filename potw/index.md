@@ -21,3 +21,7 @@ This page is a list of all the projects we've highlighted so far (partly for you
 * [Uno Platform](https://platform.uno/) - [December 8, 2019](https://www.dotnetbytes.fm/12)
 * [CodeQL](https://securitylab.github.com/tools/codeql) - [December 8, 2019](https://www.dotnetbytes.fm/12)
 * [TwitchLib](https://github.com/TwitchLib/TwitchLib) - [December 16, 2019](https://www.dotnetbytes.fm/13)
+* [Building A New Win 3.1 App in 2019 Part 1: Slack Client](http://yeokhengmeng.com/2019/12/building-a-new-win-3-1-app-in-2019-part-1-slack-client/) - [January 27, 2020](https://www.dotnetbytes.fm/14)
+* [Ryujinx](https://github.com/Ryujinx/Ryujinx) - [February 10, 2020](https://www.dotnetbytes.fm/15)
+* [OWASP .NET Project](https://twitter.com/sempf) - [February 10, 2020](https://www.dotnetbytes.fm/15)
+* [Tuxboard](https://github.com/jdanylko/Tuxboard) - [February 10, 2020](https://www.dotnetbytes.fm/15)
