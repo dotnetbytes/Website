@@ -25,3 +25,4 @@ This page is a list of all the projects we've highlighted so far (partly for you
 * [Ryujinx](https://github.com/Ryujinx/Ryujinx) - [February 10, 2020](https://www.dotnetbytes.fm/15)
 * [OWASP .NET Project](https://twitter.com/sempf) - [February 10, 2020](https://www.dotnetbytes.fm/15)
 * [Tuxboard](https://github.com/jdanylko/Tuxboard) - [February 10, 2020](https://www.dotnetbytes.fm/15)
+* [NetLearner](https://wakeupandcode.com/netlearner-on-asp-net-core-3-1/) - [February 24, 2020](https://www.dotnetbytes.fm/16)
