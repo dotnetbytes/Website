@@ -8,9 +8,7 @@ sitemap: true
 
 ![Calvin A. Allen](/images/calvin.jpg)
 
-Calvin A. Allen is a technical architect with Centric Consulting.  Creating and maintaining software is his passion, and he take a lot of pride in his work. He likes to keep up to date on the latest developments in the industry, and tries to play a role in the community as much as he can. He is a [GitKraken Ambassador](https://www.gitkraken.com) and a [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003520).
-
-Outside of the office, he's likely spending time with his wife and daughter.
+Calvin A. Allen is a C# / .NET technical architect in the Columbus, OH area.  Creating and maintaining software is his passion, and he take a lot of pride in his work. He likes to keep up to date on the latest developments in the industry, and tries to play a role in the community as much as he can. 
 
 ## Matthew D. Groves
 
