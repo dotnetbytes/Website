@@ -87,4 +87,4 @@ defaults:
       comments: true
       sharing: true
       keywords: ["c#", ".net", "visual studio"]
-      image: "cover.jpg"
+      image: "cover.png"

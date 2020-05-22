@@ -50,7 +50,14 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="{{ page.title }}" />
   
-	<meta property="og:image" content="{{ site.url }}/images/cover.jpg" />
+  {% assign post_path = page.path | prepend: '/' | prepend: site.source %}
+  {% capture cover_image_exists %}{% cover_exists {{ post_path }},{{ page.image }} %}{% endcapture %}
+
+  {% if page.image and cover_image_exists == "true" %}
+    <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ page.image }}" />
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/images/cover.jpg" />
+  {% endif %}
 	
 	{% if page.description %}
 		<meta property="og:description" content="{{ page.description }}" />
