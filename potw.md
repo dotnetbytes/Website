@@ -28,3 +28,5 @@ This page is a list of all the projects we've highlighted so far (partly for you
 * [NetLearner](https://wakeupandcode.com/netlearner-on-asp-net-core-3-1/) - [February 24, 2020](https://www.dotnetbytes.fm/16)
 * [CoreBoy](https://www.hanselman.com/blog/CoreBoyIsACrossPlatformGameBoyEmulatorWrittenInCThatEvenDoesASCII.aspx) - [May 11, 2020](https://www.dotnetbytes.fm/17)
 * [CSLA](https://github.com/MarimerLLC/csla) - [May 26, 2020](https://www.dotnetbytes.fm/18)
+* [Microsoft Open-Sources GW-BASIC](https://devblogs.microsoft.com/commandline/microsoft-open-sources-gw-basic/) - [June 8,2020](https://www.dotnetbytes.fm/19)
+* [gsudo](https://github.com/gerardog/gsudo) - [June 22, 2020](https://www.dotnetbytes.fm/20)
